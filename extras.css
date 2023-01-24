@@ -1,0 +1,28 @@
+.extras {
+  width: 100%;
+  display: block;
+  background-color: #54F2F2;
+  border-color: #54F2F2;
+  width: 100%;
+  height: 250px;
+  padding: 60px 0;
+}
+
+.follow {
+  text-align: center;
+  font-size: 70px;
+}
+
+.connect {
+  display: flex;
+  width: 800px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.footer-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}

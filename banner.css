@@ -1,0 +1,46 @@
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.start:hover {
+  cursor: pointer;
+}
+
+.banner {
+  width: 100%;
+  color: white;
+  background-color: #0a1616;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 5;
+}
+
+.left {
+  display: flex;
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+.right p {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 40px;
+  font-size: 20px;
+}
+
+.links:hover {
+  cursor: pointer;
+}
+
+.resume {
+  margin-left: 50px;
+  text-decoration: none;
+}
+
+.resume:hover {
+  cursor: pointer;
+}

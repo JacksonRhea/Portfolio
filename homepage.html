@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="/banner.css" rel="stylesheet">
+    <link href="/homepage.css" rel="stylesheet">
+    <link href="/project.css" rel="stylesheet">
+    <link href="/skills.css" rel="stylesheet">
+    <link href="/contact.css" rel="stylesheet">
+    <link href="/extras.css" rel="stylesheet">
+    <link href="/overlay.css" rel="stylesheet">
+
+    <script src="functions.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>
+      Jackson Rhea - Portfolio
+    </title>
+  </head>
+  <body>
+
+    <img class="background" src="/images/background.jpg">
+
+    <div class="banner">
+      <div class="left">
+        <p class="start"><a href="#top-page">Jackson Rhea</a></p>
+        <p class="resume"><a target="_blank" href="/images/Resume.pdf">Resume</a></p>
+      </div>
+      <div class="right">
+        <p class="links"><a href="#about">About</a></p>
+        <p class="links"><a href="#proj-section">Projects</a></p>
+        <p class="links"><a href="#skill-section">Skills</a></p>
+        <p class="links"><a href="#contact-section">Contact</a></p>
+      </div>
+    </div>
+
+    <div id="top-page" class="welcome">
+      <div class="welcome-container">
+        <p class="intro">
+          <span id="start-text" class="title">Welcome to my Portfolio!</span>
+          <br>
+          <span id="start-text" class="date">Last edit: 1/21/23</span>
+          <br>
+          <span id="start-text" class="intro-desc">This is my first attempt at making my own website so what you
+          see now will probably change next time you visit as I plan to constantly 
+          make changes to this site to make it more user-friendly, presentable, etc, and of course
+          add more projects!</span>
+          <br>
+        </p>
+      </div>
+    </div>
+
+    <div id="about" class="about-container">
+      <div>
+        <img class="portrait" src="/images/self.jpg">
+      </div>
+      <div class="text-holder">
+        <p>
+          <span id="start-text" class="about">A little bit about me...</span>
+          <br>
+          <span id="start-text" class="intro-desc">I'm a Junior at the Ira A. Fulton School of Engineering at Arizona State 
+          University studying Computer Science alongside a Game Development Certificate.
+          I never really knew what I wanted to do when I got to college but decided that
+          Computer Science seemed interesting so I went with that. That decision was
+          one of the best decisions I could have made as I have absolutely loved everything
+          there was to learn about Computer Science. Before college if you asked me what a programmer
+          was I would have answered, "Someone who types 1's and 0's" and while in essence that's
+          true, I never would have imagined the creative freedom you have once you truly 
+          learn a language. The projects you can create are endless and that excites me the
+          most about programming and I look forward to what I learn next.</span>
+        </p>
+      </div>
+    </div>
+
+    <div id="proj-section" class="projects">
+      <div class="proj-content" onclick="openOverlay()">
+
+        <div class="page-overlay">
+          <div class="overlay-main-1"> <!--Overlay Container - vertical-->
+            <div class="overlay-header-container"> <!--Title Container - horizontal-->
+              <div> <!--Title-->
+                <span class="overlay-title">Scientific Computing with Python Certification</span>
+              </div>
+              <div class="x-container"> <!--X button-->
+                <span class="close-button" onclick="closeOverlay">&times;</span>
+              </div>
+            </div>
+            <div class="description-container"> <!--Img, desc, and link container horizontal-->
+              <div> <!--Img-->
+                <img class="overlay-img" src="/images/T-gameplay1.PNG">
+              </div>
+              <div> <!--Desc and link container, vertical-->
+                <div> <!--Desc-->
+                  <p class="desc-header">Project Description</p>
+                  <p class="overlay-desc">This is a description of the project
+                    it was a cool and difficult project. I learned many things such as. 
+                    Projects are cool.
+                  </p>
+                </div>
+                <div> <!--Links-->
+                  <p class="link-header">Links</p>
+                  <p class="overlay-links">These are links for said project:
+                    www.coolmathgames.com
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p class="proj-title">Projects</p>
+        </div>
+        <div class="project-grid">
+          <div class="proj-item1">
+            <div class="project-overlay">Scientific Computing with Python Certificate</div>
+          </div>
+          <div class="proj-item2">
+            <div class="project-overlay">Restuarant Ordering Application GUI</div>
+          </div>
+          <div class="proj-item3">
+            <div class="project-overlay-title">Reclaimed Treasure</div>
+            <div class="project-overlay3">2D Adventure Game using GameMaker</div>
+          </div>
+          <div class="proj-item5">
+            <div class="project-overlay-title">Maze Escape</div>
+            <div class="project-overlay2">3D Game from own Game Engine</div>
+          </div>
+          <div class="proj-item4">
+            <div class="project-overlay2">3D Party-Minigame using Unity</div>
+          </div>
+          <div class="proj-item6">
+            <div class="project-overlay">More coming soon!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="skill-section" class="skills">
+      <div>
+        <div class="skill-title">
+          Skills
+        </div>
+        <div class="skill-intro">
+          Below are some of the skills I have acquired thus far in my time as a 
+          Computer Programmer. Always looking to add more.
+        </div>
+        <div class="skill-grid">
+          <div class="grid-item">
+            <span class="grid-title">Java</span>
+            <div class="skill-desc">
+              Have spent 2 years coding in Java, created the GUI application above
+              in Java among other classwork during my 1st and 2nd year at university.
+            </div>
+          </div>
+          <div class="grid-item">
+            <span class="grid-title">Python</span>
+            <div class="skill-desc">
+              Picked up Python on my own and used it to complete the certification
+              project from above. Looking to make more projects in Python soon!
+            </div>
+          </div>
+          <div class="grid-item">
+            <span class="grid-title">C#</span>
+            <div class="skill-desc">
+              Used in all my game development projects, I have lots of practice in C#
+              from classwork and projects.
+            </div>
+          </div>
+          <div class="grid-item">
+            <span class="grid-title">HTML/CSS</span>
+            <div class="skill-desc">
+              Never took a class for this but decided to learn it on my own as I wanted
+              to use HTML/CSS to make my own website and here we are :)
+            </div>
+          </div>
+          <div class="grid-item">
+            <span class="grid-title">C/C++</span>
+            <div class="skill-desc">
+              Used throughout my 2nd year of university for mainy classwork, never
+              ended up using it for any personal projects, however, I plan on doing
+              a project in C++.
+            </div>
+          </div>
+          <div class="grid-item">
+            <span class="grid-title">Unity</span>
+            <div class="skill-desc">
+              Had to use the Unity software for the 3D party minigame, alongside that,
+              made several smaller games throughout the game development class.
+            </div>
+          </div>
+          <div class="grid-item">
+            <span class="grid-title">Github</span>
+            <div class="skill-desc">
+              Every project I have created or worked in a group to create and many 
+              others which haven't been listed required the use of Github to push
+              our changes in an efficient manner. 
+            </div>
+          </div>
+          <div class="grid-item">
+            <span class="grid-title">VS/VS Code</span>
+            <div class="skill-desc">
+              Main software I use now, used this for almost every class and/or project 
+              I work on currently.
+            </div>
+          </div>
+          <div class="grid-item">
+            <span class="grid-title">In Progress</span>
+            <div class="skill-desc">
+              Always looking to learn new skills so expect more additions in the
+              coming months!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact-section" class="contact"><!--start of the entire section vertical-->
+      <div class="contact-header"> <!--Picture w/ text-->
+        <p class="contact-text">Contact Me... work in progress :)</p>
+      </div>
+      <div class="contact-mesage"> <!--Holds details and inputs vertically-->
+        <div class="message-header"> <!--Headers-->
+          <p>Email: jdrhea@asu.edu | Message below</p>
+        </div>
+        <div class="inputs"> <!--Holds inputs horizontally-->
+          <div> <!--Text field-->
+            <textarea rows="10" cols="50" class="text-field" type="text" 
+            placeholder="Message Me..." size="50"></textarea>
+          </div>
+          <div class="name-inputs"> <!--other inputs vertically-->
+            <input class="info" type="text" placeholder="First Name">
+            <input class="info" type="text" placeholder="Last Name">
+            <input class="info" type="text" placeholder="Email">
+          </div>
+        </div>
+      </div>
+      <div class="submit-button">
+        <button class="submit">Submit</button>
+      </div>
+    </div>
+
+    <footer class="extras">
+      <div class="follow">
+        Follow me here!
+      </div>
+      <div class="connect">
+        <div>
+          <a target="_blank" href="https://www.linkedin.com/in/jackson-rhea">
+            <img class="footer-img" src="/images/linked.png"></a>
+        </div>
+        <div>
+          <a target="_blank" href="https://github.com/JacksonRhea">
+            <img class="footer-img" src="/images/gitlink.png"></a>
+        </div>
+        <div>
+          <a target="_blank" href="https://jacki-boi.itch.io">
+            <img class="footer-img" src="/images/itch.png"></a>
+        </div>
+      </div>
+    </footer> 
+
+  </body>
+</html>

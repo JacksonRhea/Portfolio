@@ -1,0 +1,210 @@
+.projects {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #5EB1BF;
+}
+
+.proj-content {
+  z-index: 4;
+  position: relative;
+}
+
+.proj-title {
+  background-color: #5EB1BF;
+  text-align: center;
+  color: white;
+  font-size: 70px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.project-grid {
+  background-color: #5EB1BF;
+  display: grid;
+  grid-template-columns: 300px 300px;
+  column-gap: 80px;
+  row-gap: 30px;
+  margin-bottom: 80px;
+}
+
+.project-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+  transition: all .15s ease-in-out;
+}
+
+.project-img-left {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: left;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+  transition: all .15s ease-in-out;
+}
+
+.proj-item1 {
+  position: relative;
+  cursor: pointer;
+  z-index: 3;
+  width: 300px;
+  height: 300px;
+  background-image: url(/images/cert.PNG);
+  background-position: center;
+  background-size: 110%;
+  transition: all .15s ease-in-out;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+  text-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+.proj-item1:hover {
+  transform: scale(115%);
+}
+
+.proj-item2 {
+  position: relative;
+  cursor: pointer;
+  z-index: 3;
+  width: 300px;
+  height: 300px;
+  background-image: url(/images/menu.PNG);
+  background-position: center;
+  background-size: 110%;
+  transition: all .15s ease-in-out;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+  text-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+.proj-item2:hover {
+  transform: scale(115%);
+}
+
+.proj-item3 {
+  position: relative;
+  cursor: pointer;
+  z-index: 3;
+  width: 300px;
+  height: 300px;
+  background-image: url(/images/T-gameplay1.PNG);
+  background-position: center;
+  background-size: 175%;
+  transition: all .15s ease-in-out;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+  text-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+.proj-item3:hover {
+  transform: scale(115%);
+}
+
+.proj-item4 {
+  position: relative;
+  cursor: pointer;
+  z-index: 3;
+  width: 300px;
+  height: 300px;
+  background-image: url(/images/block.PNG);
+  background-position: center;
+  background-size: 190%;
+  transition: all .15s ease-in-out;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+  text-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+.proj-item4:hover {
+  transform: scale(115%);
+}
+
+.proj-item5 {
+  position: relative;
+  cursor: pointer;
+  z-index: 3;
+  width: 300px;
+  height: 300px;
+  background-image: url(/images/M-gameplay1.PNG);
+  background-position: center;
+  background-size: 220%;
+  transition: all .15s ease-in-out;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+  text-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+.proj-item5:hover {
+  transform: scale(115%);
+}
+
+.proj-item6 {
+  position: relative;
+  cursor: pointer;
+  z-index: 3;
+  width: 300px;
+  height: 300px;
+  background-image: url(/images/construct.png);
+  background-position: center;
+  background-size: 150%;
+  transition: all .15s ease-in-out;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+  text-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+.proj-item6:hover {
+  transform: scale(115%);
+}
+
+.project-overlay {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  width: 150px;
+  height: 300px;
+  right: 70px;
+  top: 205px;
+  text-align: center;
+  transition: all .15s ease-in-out;
+}
+
+.project-overlay2 {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  width: 150px;
+  height: 300px;
+  right: 70px;
+  top: 205px;
+  text-align: center;
+  transition: all .15s ease-in-out;
+}
+
+.project-overlay3 {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  width: 150px;
+  height: 300px;
+  right: 70px;
+  top: 205px;
+  text-align: center;
+  transition: all .15s ease-in-out;
+}
+
+.project-overlay-title {
+  position: absolute;
+  color: Red;
+  font-weight: bold;
+  width: 170px;
+  height: 300px;
+  right: 70px;
+  top: 25px;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  transition: all .15s ease-in-out;
+}
+
