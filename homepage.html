@@ -79,7 +79,7 @@
     </div>
 
     <div id="proj-section" class="projects">
-      <div class="proj-content" onclick="openOverlay()">
+      <div class="proj-content">
 
         <div class="page-overlay">
           <div class="overlay-main-1"> <!--Overlay Container - vertical-->
@@ -87,8 +87,8 @@
               <div> <!--Title-->
                 <span class="overlay-title">Scientific Computing with Python Certification</span>
               </div>
-              <div class="x-container"> <!--X button-->
-                <span class="close-button" onclick="closeOverlay">&times;</span>
+              <div class="x-container" onclick="closeOverlay()"> <!--X button-->
+                <span class="close-button">&times;</span>
               </div>
             </div>
             <div class="description-container"> <!--Img, desc, and link container horizontal-->
@@ -118,7 +118,7 @@
           <p class="proj-title">Projects</p>
         </div>
         <div class="project-grid">
-          <div class="proj-item1">
+          <div class="proj-item1"  onclick="openOverlay()">
             <div class="project-overlay">Scientific Computing with Python Certificate</div>
           </div>
           <div class="proj-item2">

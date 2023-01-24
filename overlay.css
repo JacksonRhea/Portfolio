@@ -1,10 +1,10 @@
 .page-overlay {
   position: fixed;
-  top: 0;
+  top: 0%;
   left: 0;
   width: 100%;
   height: 100vh;
-  z-index: 1;
+  z-index: 4;
   background: rgba(0, 0, 0, 0.5);
   display: none;
 }
@@ -15,14 +15,14 @@
   background-color: rgb(250, 250, 250);
   display: block;
   margin: auto;
-  z-index: 2;
+  z-index: 4;
   opacity: 0;
   overflow: hidden;
   position: fixed;
-  top: -150%;
+  top: 20%;
+  left: 35%;
   opacity: 0;
-  transform: translate(-50%, -50%) scale(1.15);
-  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
 }
 
 .overlay-header-container {
@@ -54,7 +54,7 @@
   font-size: 85px;
   margin: 0;
   margin-right: -160px;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   color: white;
 }
 
@@ -78,7 +78,7 @@
   width: 75%;
   text-align: center;
   padding-left: 15%;
-  color: white;
+  color: black;
   font-size: 40px;
   text-decoration: underline;
 }
@@ -92,7 +92,7 @@
   width: 75%;
   text-align: center;
   padding-left: 15%;
-  color: white;
+  color: black;
   font-size: 20px;
 }
 
@@ -114,9 +114,14 @@ body.activeOverlay .page-overlay {
 }
 
 body.activeOverlay .overlay-main-1 {
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-1%, -45%) scale(1);
   opacity: 1;
   top: 50%;
+}
+
+body.endScroll {
+  height: 100%;
+  overflow: hidden;
 }
 
 .overlay-main-1, .close-button {
