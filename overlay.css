@@ -1,28 +1,36 @@
 .page-overlay {
   position: fixed;
-  top: 0%;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  z-index: 4;
-  background: rgba(0, 0, 0, 0.5);
+  z-index: 7;
+  background: rgba(0, 0, 0, 0.7);
   display: none;
 }
 
-.overlay-main-1 {
-  width: 75%;
+.overlay-main-1, .overlay-main-2,
+.overlay-main-3, .overlay-main-4,
+.overlay-main-5 {
+  top: 37%;
+  left: -45%;
+  position: absolute;
+  transform: translate(0, 70%) scale(1.15);
   height: 800px;
+  width: 1300px;
   background-color: rgb(250, 250, 250);
   display: block;
-  margin: auto;
-  z-index: 4;
+  z-index: 8;
   opacity: 0;
-  overflow: hidden;
-  position: fixed;
-  top: 20%;
-  left: 35%;
-  opacity: 0;
-  transition: opacity 300ms ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.overlay-main-1 .close-button,
+.overlay-main-2 .close-button,
+.overlay-main-3 .close-button,
+.overlay-main-4 .close-button,
+.overlay-main-5 .close-button {
+  position: absolute;
 }
 
 .overlay-header-container {
@@ -45,9 +53,9 @@
   justify-content: right;
   padding: 0;
   margin: 0;
-  right: 200px;
+  right: 160px;
   align-items: center;
-  top: 0;
+  top: 30px;
 }
 
 .close-button {
@@ -56,9 +64,6 @@
   margin-right: -160px;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   color: white;
-}
-
-.close-button:hover {
   cursor: pointer;
 }
 
@@ -101,29 +106,21 @@
   padding-bottom: 15%;
 }
 
-body.activeOverlay .overlay-main-1 {
-  z-index: 7;
-  opacity: 1;
-  top: 80px;
-  left: 300px;
-  width: 1300px;
-}
-
-body.activeOverlay .page-overlay {
+body.activeOverlay1 .page-overlay,
+body.activeOverlay2 .page-overlay,
+body.activeOverlay3 .page-overlay,
+body.activeOverlay4 .page-overlay,
+body.activeOverlay5 .page-overlay {
   display: block;
 }
 
-body.activeOverlay .overlay-main-1 {
-  transform: translate(-1%, -45%) scale(1);
+body.activeOverlay1 .overlay-main-1,
+body.activeOverlay2 .overlay-main-2,
+body.activeOverlay3 .overlay-main-3,
+body.activeOverlay4 .overlay-main-4,
+body.activeOverlay5 .overlay-main-5 {
+  top: 37%;
+  left: -45%;
+  transform: translate(0, -45%) scale(1);
   opacity: 1;
-  top: 50%;
-}
-
-body.endScroll {
-  height: 100%;
-  overflow: hidden;
-}
-
-.overlay-main-1, .close-button {
-  position: absolute;
 }
