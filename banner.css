@@ -9,8 +9,8 @@ a, a:hover, a:focus, a:active {
 
 .banner {
   width: 100%;
-  color: white;
-  background-color: #0a1616;
+  color: black;
+  background-color: #99d6d3;
   height: 55px;
   display: flex;
   justify-content: space-between;
@@ -31,6 +31,7 @@ a, a:hover, a:focus, a:active {
   margin-right: 40px;
   font-size: 20px;
 }
+
 
 .links:hover {
   cursor: pointer;

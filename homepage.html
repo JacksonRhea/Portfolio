@@ -7,6 +7,7 @@
 
     <link href="/banner.css" rel="stylesheet">
     <link href="/homepage.css" rel="stylesheet">
+    <link href="/welcome.css" rel="stylesheet">
     <link href="/project.css" rel="stylesheet">
     <link href="/skills.css" rel="stylesheet">
     <link href="/contact.css" rel="stylesheet">
@@ -25,6 +26,7 @@
   </head>
   <body>
 
+    <a id="top-page"></a>
     <img class="background" src="/images/background.jpg">
 
     <div class="banner">
@@ -40,48 +42,62 @@
       </div>
     </div>
 
-    <div id="top-page" class="welcome">
-      <div class="welcome-container">
-        <p class="intro">
-          <span id="start-text" class="title">Welcome to my Portfolio!</span>
-          <br>
-          <span id="start-text" class="date">Last edit: 1/21/23</span>
-          <br>
-          <span id="start-text" class="intro-desc">This is my first attempt at making my own website so what you
-          see now will probably change next time you visit as I plan to constantly 
-          make changes to this site to make it more user-friendly, presentable, etc, and of course
-          add more projects!</span>
-          <br>
-        </p>
+    <div class="welcome"> <!--Welcome Container, V2-->
+      <div class="name-container"> <!--Name-->
+        <p class="name">Jackson Rhea</p>
+      </div>
+      <div class="bottom-half"> <!--Container for pfp, links, desc... H2-->
+        <div class="links-pfp"> <!--pfp and links, H2-->
+            <img class="pfp" src="/images/pfp.PNG">
+            <div class="links-page">
+              <a target="_blank" href="https://www.linkedin.com/in/jackson-rhea">
+                <img class="link1" src="images/linked.png" ></a>
+              <a target="_blank" href="https://github.com/JacksonRhea">
+                <img class="link2" src="images/gitlink.png" ></a>
+              <a target="_blank" href="https://jacki-boi.itch.io">
+                  <img class="link3" src="images/itch.png" ></a>
+            </div>
+        </div>
+        <div class="welcome-info"> <!--Desc, V2-->
+          <p id="welcome-header">Computer Science Student at <br> Arizona State University</p>
+          <p id="welcome-desc">Currently looking for internships in a Software Engineer Role</p>
+          <p id="date">Last Edit: 2/17/23</p>
+        </div>
       </div>
     </div>
 
     <div id="about" class="about-container">
       <div>
+        <p class="title">A little bit about me...</p>
         <img class="portrait" src="/images/self.jpg">
       </div>
       <div class="text-holder">
         <p>
-          <span id="start-text" class="about">A little bit about me...</span>
-          <br>
-          <span id="start-text" class="intro-desc">I'm a Junior at the Ira A. Fulton School of Engineering at Arizona State 
-          University studying Computer Science alongside a Game Development Certificate.
-          I never really knew what I wanted to do when I got to college but decided that
-          Computer Science seemed interesting so I went with that. That decision was
-          one of the best decisions I could have made as I have absolutely loved everything
-          there was to learn about Computer Science. Before college if you asked me what a programmer
-          was I would have answered, "Someone who types 1's and 0's" and while in essence that's
-          true, I never would have imagined the creative freedom you have once you truly 
-          learn a language. The projects you can create are endless and that excites me the
-          most about programming and I look forward to what I learn next.</span>
+          <span id="start-text" class="intro-desc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm a Junior at the Ira A. <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fulton School 
+          of <br>&nbsp;&nbsp;&nbsp;Engineering at Arizona <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;State University <br>&nbsp;&nbsp;&nbsp; studying Computer <br>&nbsp;&nbsp; Science alongside a <br>&nbsp;&nbsp;&nbsp;&nbsp;Certificate in
+          Game &nbsp;&nbsp;&nbsp;Development. I am a <br>&nbsp; highly driven individual<br>&nbsp; who is always looking
+          to <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; learn new skills and </span>
+          <span class="intro-desc2">&nbsp;eventually use my skills <br>&nbsp;&nbsp;&nbsp;&nbsp; to make software that <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;can benefit 
+            other people. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Main interests include <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Software Development 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and Artificial Intelligence. 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Currently working on &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;learning how to develop &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AI with the goal of 
+            adding &nbsp;&nbsp;&nbsp;&nbsp;various projects.</span>
         </p>
+      </div>
+      <div class="extra-holder">
+        <p class="extra-text">Check out my projects, skills, and resume!</p>
+        <div class="link-holder">
+          <a href="#proj-section"><button class="site-links">Projects</button></a>
+          <a href="#skill-section"><button class="site-links">Skills</button></a>
+          <a target="_blank" href="/images/Resume.pdf"><button class="site-links">Resume</button></a>
+        </div>
       </div>
     </div>
 
     <div id="proj-section" class="projects">
       <div class="proj-content">
 
-      <div class="page-overlay"></div>
+      <div class="page-overlay" onclick="closeOverlay1()"></div>
       <div class="overlay-main-1"> <!--Overlay Container - vertical-->
         <div class="overlay-header-container"> <!--Title Container - horizontal-->
           <div> <!--Title-->
