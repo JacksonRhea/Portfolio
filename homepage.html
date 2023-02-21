@@ -12,8 +12,8 @@
     <link href="/skills.css" rel="stylesheet">
     <link href="/contact.css" rel="stylesheet">
     <link href="/extras.css" rel="stylesheet">
-    <link href="/overlay.css" rel="stylesheet">
-
+    <!--<link href="/overlay.css" rel="stylesheet">-->
+    <link href="/proj-overlay.css" rel="stylesheet">
     <script src="functions.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,395 +25,237 @@
     </title>
   </head>
   <body>
-
     <a id="top-page"></a>
-    <img class="background" src="/images/background.jpg">
+    <div class="main">
+      <img class="background" src="/images/background.jpg">
 
-    <div class="banner">
-      <div class="left">
-        <p class="start"><a href="#top-page">Jackson Rhea</a></p>
-        <p class="resume"><a target="_blank" href="/images/Resume.pdf">Resume</a></p>
-      </div>
-      <div class="right">
-        <p class="links"><a href="#about">About</a></p>
-        <p class="links"><a href="#proj-section">Projects</a></p>
-        <p class="links"><a href="#skill-section">Skills</a></p>
-        <p class="links"><a href="#contact-section">Contact</a></p>
-      </div>
-    </div>
-
-    <div class="welcome"> <!--Welcome Container, V2-->
-      <div class="name-container"> <!--Name-->
-        <p class="name">Jackson Rhea</p>
-      </div>
-      <div class="bottom-half"> <!--Container for pfp, links, desc... H2-->
-        <div class="links-pfp"> <!--pfp and links, H2-->
-            <img class="pfp" src="/images/pfp.PNG">
-            <div class="links-page">
-              <a target="_blank" href="https://www.linkedin.com/in/jackson-rhea">
-                <img class="link1" src="images/linked.png" ></a>
-              <a target="_blank" href="https://github.com/JacksonRhea">
-                <img class="link2" src="images/gitlink.png" ></a>
-              <a target="_blank" href="https://jacki-boi.itch.io">
-                  <img class="link3" src="images/itch.png" ></a>
-            </div>
+      <div class="banner">
+        <div class="left">
+          <p class="start"><a href="#top-page">Jackson Rhea</a></p>
+          <p class="resume"><a target="_blank" href="/images/Resume.pdf">Resume</a></p>
         </div>
-        <div class="welcome-info"> <!--Desc, V2-->
-          <p id="welcome-header">Computer Science Student at <br> Arizona State University</p>
-          <p id="welcome-desc">Currently looking for internships in a Software Engineer Role</p>
-          <p id="date">Last Edit: 2/17/23</p>
+        <div class="right">
+          <p class="links"><a href="#about">About</a></p>
+          <p class="links"><a href="#proj-section">Projects</a></p>
+          <p class="links"><a href="#skill-section">Skills</a></p>
+          <p class="links"><a href="#contact-section">Contact</a></p>
         </div>
       </div>
-    </div>
 
-    <div id="about" class="about-container">
-      <div>
-        <p class="title">A little bit about me...</p>
-        <img class="portrait" src="/images/self.jpg">
-      </div>
-      <div class="text-holder">
-        <p>
-          <span id="start-text" class="intro-desc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm a Junior at the Ira A. <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fulton School 
-          of <br>&nbsp;&nbsp;&nbsp;Engineering at Arizona <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;State University <br>&nbsp;&nbsp;&nbsp; studying Computer <br>&nbsp;&nbsp; Science alongside a <br>&nbsp;&nbsp;&nbsp;&nbsp;Certificate in
-          Game &nbsp;&nbsp;&nbsp;Development. I am a <br>&nbsp; highly driven individual<br>&nbsp; who is always looking
-          to <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; learn new skills and </span>
-          <span class="intro-desc2">&nbsp;eventually use my skills <br>&nbsp;&nbsp;&nbsp;&nbsp; to make software that <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;can benefit 
-            other people. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Main interests include <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Software Development 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and Artificial Intelligence. 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Currently working on &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;learning how to develop &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AI with the goal of 
-            adding &nbsp;&nbsp;&nbsp;&nbsp;various projects.</span>
-        </p>
-      </div>
-      <div class="extra-holder">
-        <p class="extra-text">Check out my projects, skills, and resume!</p>
-        <div class="link-holder">
-          <a href="#proj-section"><button class="site-links">Projects</button></a>
-          <a href="#skill-section"><button class="site-links">Skills</button></a>
-          <a target="_blank" href="/images/Resume.pdf"><button class="site-links">Resume</button></a>
+      <div class="welcome"> <!--Welcome Container, V2-->
+        <div class="name-container"> <!--Name-->
+          <p class="name">Jackson Rhea</p>
         </div>
-      </div>
-    </div>
-
-    <div id="proj-section" class="projects">
-      <div class="proj-content">
-
-      <div class="page-overlay" onclick="closeOverlay1()"></div>
-      <div class="overlay-main-1"> <!--Overlay Container - vertical-->
-        <div class="overlay-header-container"> <!--Title Container - horizontal-->
-          <div> <!--Title-->
-            <span class="overlay-title">Scientific Computing with Python Certification</span>
+        <div class="bottom-half"> <!--Container for pfp, links, desc... H2-->
+          <div class="links-pfp"> <!--pfp and links, H2-->
+              <img class="pfp" src="/images/pfp.PNG">
+              <div class="links-page">
+                <a target="_blank" href="https://www.linkedin.com/in/jackson-rhea">
+                  <img class="link1" src="images/linked.png" ></a>
+                <a target="_blank" href="https://github.com/JacksonRhea">
+                  <img class="link2" src="images/gitlink.png" ></a>
+                <a target="_blank" href="https://jacki-boi.itch.io">
+                    <img class="link3" src="images/itch.png" ></a>
+              </div>
           </div>
-          <div class="x-container" onclick="closeOverlay1()"> <!--X button-->
-            <span class="close-button">&times;</span>
-          </div>
-        </div>
-        <div class="description-container"> <!--Img, desc, and link container horizontal-->
-          <div> <!--Img-->
-            <img class="overlay-img" src="/images/T-gameplay1.PNG">
-          </div>
-          <div> <!--Desc and link container, vertical-->
-            <div> <!--Desc-->
-              <p class="desc-header">Project Description</p>
-              <p class="overlay-desc">This certification was offered through freeCodeCamp to which I 
-                used as a resource to learn Python. The certification consisted of 5 projects:
-              </p>
-              <ul>
-                <li>Arithmetic Formatter:</li>
-                <li>Time Calculator</li>
-                <li>Budget App</li>
-                <li>Polygon Area Calculator</li>
-                <li>Probability Calculator</li>
-              </ul>
-              <p class="overlay-desc">
-                All these projects had numerous test cases that needed to be passed in order for the 
-                project to be complete.
-              </p>
-            </div>
-            <div> <!--Links-->
-              <p class="link-header">Links</p>
-              <p class="overlay-links">These are links for said project:
-                www.coolmathgames.com
-              </p>
-            </div>
+          <div class="welcome-info"> <!--Desc, V2-->
+            <p id="welcome-header">Computer Science Student at <br> Arizona State University</p>
+            <p id="welcome-desc">Currently looking for internships in a Software Engineer Role</p>
+            <p id="date">Last Edit: 2/20/23</p>
           </div>
         </div>
       </div>
 
-      <div class="overlay-main-2"> <!--Overlay Container - vertical-->
-        <div class="overlay-header-container"> <!--Title Container - horizontal-->
-          <div> <!--Title-->
-            <span class="overlay-title">GUI</span>
-          </div>
-          <div class="x-container" onclick="closeOverlay2()"> <!--X button-->
-            <span class="close-button">&times;</span>
-          </div>
-        </div>
-        <div class="description-container"> <!--Img, desc, and link container horizontal-->
-          <div> <!--Img-->
-            <img class="overlay-img" src="/images/T-gameplay1.PNG">
-          </div>
-          <div> <!--Desc and link container, vertical-->
-            <div> <!--Desc-->
-              <p class="desc-header">Project Description</p>
-              <p class="overlay-desc">This is a description of the project
-                it was a cool and difficult project. I learned many things such as. 
-                Projects are extra cool.
-              </p>
-            </div>
-            <div> <!--Links-->
-              <p class="link-header">Links</p>
-              <p class="overlay-links">These are links for said project:
-                www.coolmathgames.com
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="overlay-main-3"> <!--Overlay Container - vertical-->
-        <div class="overlay-header-container"> <!--Title Container - horizontal-->
-          <div> <!--Title-->
-            <span class="overlay-title">TREASHURE</span>
-          </div>
-          <div class="x-container" onclick="closeOverlay3()"> <!--X button-->
-            <span class="close-button">&times;</span>
-          </div>
-        </div>
-        <div class="description-container"> <!--Img, desc, and link container horizontal-->
-          <div> <!--Img-->
-            <img class="overlay-img" src="/images/T-gameplay1.PNG">
-          </div>
-          <div> <!--Desc and link container, vertical-->
-            <div> <!--Desc-->
-              <p class="desc-header">Project Description</p>
-              <p class="overlay-desc">This is a description of the project
-                it was a cool and difficult project. I learned many things such as. 
-                Projects are extra cool.
-              </p>
-            </div>
-            <div> <!--Links-->
-              <p class="link-header">Links</p>
-              <p class="overlay-links">These are links for said project:
-                www.coolmathgames.com
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="overlay-main-4"> <!--Overlay Container - vertical-->
-        <div class="overlay-header-container"> <!--Title Container - horizontal-->
-          <div> <!--Title-->
-            <span class="overlay-title">aMAZEing Maze</span>
-          </div>
-          <div class="x-container" onclick="closeOverlay4()"> <!--X button-->
-            <span class="close-button">&times;</span>
-          </div>
-        </div>
-        <div class="description-container"> <!--Img, desc, and link container horizontal-->
-          <div> <!--Img-->
-            <img class="overlay-img" src="/images/T-gameplay1.PNG">
-          </div>
-          <div> <!--Desc and link container, vertical-->
-            <div> <!--Desc-->
-              <p class="desc-header">Project Description</p>
-              <p class="overlay-desc">This is a description of the project
-                it was a cool and difficult project. I learned many things such as. 
-                Projects are extra cool.
-              </p>
-            </div>
-            <div> <!--Links-->
-              <p class="link-header">Links</p>
-              <p class="overlay-links">These are links for said project:
-                www.coolmathgames.com
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="overlay-main-5"> <!--Overlay Container - vertical-->
-        <div class="overlay-header-container"> <!--Title Container - horizontal-->
-          <div> <!--Title-->
-            <span class="overlay-title">Le BLocks</span>
-          </div>
-          <div class="x-container" onclick="closeOverlay5()"> <!--X button-->
-            <span class="close-button">&times;</span>
-          </div>
-        </div>
-        <div class="description-container"> <!--Img, desc, and link container horizontal-->
-          <div> <!--Img-->
-            <img class="overlay-img" src="/images/T-gameplay1.PNG">
-          </div>
-          <div> <!--Desc and link container, vertical-->
-            <div> <!--Desc-->
-              <p class="desc-header">Project Description</p>
-              <p class="overlay-desc">This is a description of the project
-                it was a cool and difficult project. I learned many things such as. 
-                Projects are extra cool.
-              </p>
-            </div>
-            <div> <!--Links-->
-              <p class="link-header">Links</p>
-              <p class="overlay-links">These are links for said project:
-                www.coolmathgames.com
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <div id="about" class="about-container">
         <div>
-          <p class="proj-title">Projects</p>
+          <p class="title">A little bit about me...</p>
+          <img class="portrait" src="/images/self.jpg">
         </div>
-        <div class="project-grid">
-          <div class="proj-item1"  onclick="openOverlay1()">
-            <div class="project-overlay">Scientific Computing with Python Certificate</div>
-          </div>
-          <div class="proj-item2" onclick="openOverlay2()">
-            <div class="project-overlay">Restuarant Ordering Application GUI</div>
-          </div>
-          <div class="proj-item3" onclick="openOverlay3()">
-            <div class="project-overlay-title">Reclaimed Treasure</div>
-            <div class="project-overlay3">2D Adventure Game using GameMaker</div>
-          </div>
-          <div class="proj-item5" onclick="openOverlay4()">
-            <div class="project-overlay-title">Maze Escape</div>
-            <div class="project-overlay2">3D Game from own Game Engine</div>
-          </div>
-          <div class="proj-item4" onclick="openOverlay5()">
-            <div class="project-overlay2">3D Party-Minigame using Unity</div>
-          </div>
-          <div class="proj-item6">
-            <div class="project-overlay">More coming soon!</div>
+        <div class="text-holder">
+          <p>
+            <span id="start-text" class="intro-desc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm a Junior at the Ira A. <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fulton School 
+            of <br>&nbsp;&nbsp;&nbsp;Engineering at Arizona <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;State University <br>&nbsp;&nbsp;&nbsp; studying Computer <br>&nbsp;&nbsp; Science alongside a <br>&nbsp;&nbsp;&nbsp;&nbsp;Certificate in
+            Game &nbsp;&nbsp;&nbsp;Development. I am a <br>&nbsp; highly driven individual<br>&nbsp; who is always looking
+            to <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; learn new skills and </span>
+            <span class="intro-desc2">&nbsp;eventually use my skills <br>&nbsp;&nbsp;&nbsp;&nbsp; to make software that <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;can benefit 
+              other people. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Main interests include <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Software Development 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and Artificial Intelligence. 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Currently working on &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;learning how to develop &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AI with the goal of 
+              adding &nbsp;&nbsp;&nbsp;&nbsp;various projects.</span>
+          </p>
+        </div>
+        <div class="extra-holder">
+          <p class="extra-text">Check out my projects, skills, and resume!</p>
+          <div class="link-holder">
+            <a href="#proj-section"><button class="site-links">Projects</button></a>
+            <a href="#skill-section"><button class="site-links">Skills</button></a>
+            <a target="_blank" href="/images/Resume.pdf"><button class="site-links">Resume</button></a>
           </div>
         </div>
       </div>
+
+      <div id="proj-section" class="projects">
+        <div class="proj-content">
+          <div>
+            <p class="proj-title">Projects</p>
+          </div>
+          <div class="project-grid">
+            <div class="proj-item1" onclick="openOverlay()">
+              <div class="project-overlay">Scientific Computing with Python Certificate</div>
+            </div>
+            <div class="proj-item2">
+              <div class="project-overlay">Restuarant Ordering Application GUI</div>
+            </div>
+            <div class="proj-item3">
+              <div class="project-overlay-title">Reclaimed Treasure</div>
+              <div class="project-overlay3">2D Adventure Game using GameMaker</div>
+            </div>
+            <div class="proj-item5">
+              <div class="project-overlay-title">Maze Escape</div>
+              <div class="project-overlay2">3D Game from own Game Engine</div>
+            </div>
+            <div class="proj-item4">
+              <div class="project-overlay2">3D Party-Minigame using Unity</div>
+            </div>
+            <div class="proj-item6">
+              <div class="project-overlay">More coming soon!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="skill-section" class="skills">
+        <div>
+          <div class="skill-title">
+            Skills
+          </div>
+          <div class="skill-intro">
+            Below are some of the skills I have acquired thus far in my time as a 
+            Computer Programmer. Always looking to add more.
+          </div>
+          <div class="skill-grid">
+            <div class="grid-item">
+              <span class="grid-title">Java</span>
+              <div class="skill-desc">
+                Have spent 2 years coding in Java, created the GUI application above
+                in Java among other classwork during my 1st and 2nd year at university.
+              </div>
+            </div>
+            <div class="grid-item">
+              <span class="grid-title">Python</span>
+              <div class="skill-desc">
+                Picked up Python on my own and used it to complete the certification
+                project from above. Looking to make more projects in Python soon!
+              </div>
+            </div>
+            <div class="grid-item">
+              <span class="grid-title">C#</span>
+              <div class="skill-desc">
+                Used in all my game development projects, I have lots of practice in C#
+                from classwork and projects.
+              </div>
+            </div>
+            <div class="grid-item">
+              <span class="grid-title">HTML/CSS</span>
+              <div class="skill-desc">
+                Never took a class for this but decided to learn it on my own as I wanted
+                to use HTML/CSS to make my own website and here we are :)
+              </div>
+            </div>
+            <div class="grid-item">
+              <span class="grid-title">C/C++</span>
+              <div class="skill-desc">
+                Used throughout my 2nd year of university for mainy classwork, never
+                ended up using it for any personal projects, however, I plan on doing
+                a project in C++.
+              </div>
+            </div>
+            <div class="grid-item">
+              <span class="grid-title">Unity</span>
+              <div class="skill-desc">
+                Had to use the Unity software for the 3D party minigame, alongside that,
+                made several smaller games throughout the game development class.
+              </div>
+            </div>
+            <div class="grid-item">
+              <span class="grid-title">Github</span>
+              <div class="skill-desc">
+                Every project I have created or worked in a group to create and many 
+                others which haven't been listed required the use of Github to push
+                our changes in an efficient manner. 
+              </div>
+            </div>
+            <div class="grid-item">
+              <span class="grid-title">VS/VS Code</span>
+              <div class="skill-desc">
+                Main software I use now, used this for almost every class and/or project 
+                I work on currently.
+              </div>
+            </div>
+            <div class="grid-item">
+              <span class="grid-title">In Progress</span>
+              <div class="skill-desc">
+                Always looking to learn new skills so expect more additions in the
+                coming months!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact-section" class="contact"><!--start of the entire section vertical-->
+        <div class="contact-header"> <!--Picture w/ text-->
+          <p class="contact-text">Contact Me... work in progress :)</p>
+        </div>
+        <div class="contact-mesage"> <!--Holds details and inputs vertically-->
+          <div class="message-header"> <!--Headers-->
+            <p>Email: jdrhea@asu.edu | Message below</p>
+          </div>
+          <div class="inputs"> <!--Holds inputs horizontally-->
+            <div> <!--Text field-->
+              <textarea rows="10" cols="50" class="text-field" type="text" 
+              placeholder="Message Me..." size="50"></textarea>
+            </div>
+            <div class="name-inputs"> <!--other inputs vertically-->
+              <input class="info" type="text" placeholder="First Name">
+              <input class="info" type="text" placeholder="Last Name">
+              <input class="info" type="text" placeholder="Email">
+            </div>
+          </div>
+        </div>
+        <div class="submit-button">
+          <button class="submit">Submit</button>
+        </div>
+      </div>
+
+      <footer class="extras">
+        <div class="follow">
+          Follow me here!
+        </div>
+        <div class="connect">
+          <div>
+            <a target="_blank" href="https://www.linkedin.com/in/jackson-rhea">
+              <img class="footer-img" src="/images/linked.png"></a>
+          </div>
+          <div>
+            <a target="_blank" href="https://github.com/JacksonRhea">
+              <img class="footer-img" src="/images/gitlink.png"></a>
+          </div>
+          <div>
+            <a target="_blank" href="https://jacki-boi.itch.io">
+              <img class="footer-img" src="/images/itch.png"></a>
+          </div>
+        </div>
+      </footer> 
     </div>
 
-    <div id="skill-section" class="skills">
-      <div>
-        <div class="skill-title">
-          Skills
-        </div>
-        <div class="skill-intro">
-          Below are some of the skills I have acquired thus far in my time as a 
-          Computer Programmer. Always looking to add more.
-        </div>
-        <div class="skill-grid">
-          <div class="grid-item">
-            <span class="grid-title">Java</span>
-            <div class="skill-desc">
-              Have spent 2 years coding in Java, created the GUI application above
-              in Java among other classwork during my 1st and 2nd year at university.
-            </div>
-          </div>
-          <div class="grid-item">
-            <span class="grid-title">Python</span>
-            <div class="skill-desc">
-              Picked up Python on my own and used it to complete the certification
-              project from above. Looking to make more projects in Python soon!
-            </div>
-          </div>
-          <div class="grid-item">
-            <span class="grid-title">C#</span>
-            <div class="skill-desc">
-              Used in all my game development projects, I have lots of practice in C#
-              from classwork and projects.
-            </div>
-          </div>
-          <div class="grid-item">
-            <span class="grid-title">HTML/CSS</span>
-            <div class="skill-desc">
-              Never took a class for this but decided to learn it on my own as I wanted
-              to use HTML/CSS to make my own website and here we are :)
-            </div>
-          </div>
-          <div class="grid-item">
-            <span class="grid-title">C/C++</span>
-            <div class="skill-desc">
-              Used throughout my 2nd year of university for mainy classwork, never
-              ended up using it for any personal projects, however, I plan on doing
-              a project in C++.
-            </div>
-          </div>
-          <div class="grid-item">
-            <span class="grid-title">Unity</span>
-            <div class="skill-desc">
-              Had to use the Unity software for the 3D party minigame, alongside that,
-              made several smaller games throughout the game development class.
-            </div>
-          </div>
-          <div class="grid-item">
-            <span class="grid-title">Github</span>
-            <div class="skill-desc">
-              Every project I have created or worked in a group to create and many 
-              others which haven't been listed required the use of Github to push
-              our changes in an efficient manner. 
-            </div>
-          </div>
-          <div class="grid-item">
-            <span class="grid-title">VS/VS Code</span>
-            <div class="skill-desc">
-              Main software I use now, used this for almost every class and/or project 
-              I work on currently.
-            </div>
-          </div>
-          <div class="grid-item">
-            <span class="grid-title">In Progress</span>
-            <div class="skill-desc">
-              Always looking to learn new skills so expect more additions in the
-              coming months!
-            </div>
-          </div>
-        </div>
-      </div>
+    
+    <div class="popup">
+      <button class="close-btn" onclick="closeOverlay()">&times;</button>
+      <h2>Okay now this, this is epic</h2>
     </div>
 
-    <div id="contact-section" class="contact"><!--start of the entire section vertical-->
-      <div class="contact-header"> <!--Picture w/ text-->
-        <p class="contact-text">Contact Me... work in progress :)</p>
-      </div>
-      <div class="contact-mesage"> <!--Holds details and inputs vertically-->
-        <div class="message-header"> <!--Headers-->
-          <p>Email: jdrhea@asu.edu | Message below</p>
-        </div>
-        <div class="inputs"> <!--Holds inputs horizontally-->
-          <div> <!--Text field-->
-            <textarea rows="10" cols="50" class="text-field" type="text" 
-            placeholder="Message Me..." size="50"></textarea>
-          </div>
-          <div class="name-inputs"> <!--other inputs vertically-->
-            <input class="info" type="text" placeholder="First Name">
-            <input class="info" type="text" placeholder="Last Name">
-            <input class="info" type="text" placeholder="Email">
-          </div>
-        </div>
-      </div>
-      <div class="submit-button">
-        <button class="submit">Submit</button>
-      </div>
-    </div>
-
-    <footer class="extras">
-      <div class="follow">
-        Follow me here!
-      </div>
-      <div class="connect">
-        <div>
-          <a target="_blank" href="https://www.linkedin.com/in/jackson-rhea">
-            <img class="footer-img" src="/images/linked.png"></a>
-        </div>
-        <div>
-          <a target="_blank" href="https://github.com/JacksonRhea">
-            <img class="footer-img" src="/images/gitlink.png"></a>
-        </div>
-        <div>
-          <a target="_blank" href="https://jacki-boi.itch.io">
-            <img class="footer-img" src="/images/itch.png"></a>
-        </div>
-      </div>
-    </footer> 
+    <div class="blur"></div>
 
   </body>
 </html>

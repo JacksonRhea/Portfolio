@@ -17,6 +17,7 @@ a, a:hover, a:focus, a:active {
   align-items: center;
   position: fixed;
   z-index: 6;
+  top: 0;
 }
 
 .left {

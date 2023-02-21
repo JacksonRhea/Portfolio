@@ -13,7 +13,7 @@
 }
 
 .proj-title {
-  background-color: #5EB1BF;
+  background-color: #fff07c;
   text-align: center;
   color: white;
   font-size: 70px;
@@ -22,11 +22,11 @@
 }
 
 .project-grid {
-  background-color: #5EB1BF;
+  background-color: #fff07c;
   display: grid;
-  grid-template-columns: 300px 300px;
+  grid-template-columns: 300px 300px 300px;
   column-gap: 80px;
-  row-gap: 30px;
+  row-gap: 60px;
   margin-bottom: 80px;
 }
 

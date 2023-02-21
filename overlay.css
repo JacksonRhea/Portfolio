@@ -112,6 +112,7 @@ body.activeOverlay3 .page-overlay,
 body.activeOverlay4 .page-overlay,
 body.activeOverlay5 .page-overlay {
   display: block;
+  overflow: hidden;
 }
 
 body.activeOverlay1 .overlay-main-1,
@@ -123,4 +124,5 @@ body.activeOverlay5 .overlay-main-5 {
   left: -45%;
   transform: translate(0, -45%) scale(1);
   opacity: 1;
+  overflow: hidden;
 }
