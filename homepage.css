@@ -3,9 +3,6 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
-}
-
-body {
   font-family: Verdana, Arial;
 }
 
@@ -108,7 +105,6 @@ html {
   top: -200%;
   bottom: 30%;
   width: 400px;
-  text-align: left;
 }
 
 .portrait {
@@ -120,6 +116,8 @@ html {
   position: absolute;
   left: 37%;
   top: 26%;
+  float: left;
+  margin-right: 10px;
 }
 
 .new-desc {
@@ -130,18 +128,6 @@ html {
   position: absolute;
   width: 300px;
   line-height: 60px;
-}
-
-.intro-desc2 {
-  font-size: 24px;
-  line-height: 40px;
-  color: white;
-  position: absolute;
-  right: 12%;
-  top: -110%;
-  bottom: 30%;
-  width: 400px;
-  text-align: left;
 }
 
 .extra-holder {

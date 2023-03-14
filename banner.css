@@ -18,6 +18,7 @@ a, a:hover, a:focus, a:active {
   position: fixed;
   z-index: 6;
   top: 0;
+  min-width: 900px;
 }
 
 .left {
