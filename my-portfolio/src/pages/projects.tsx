@@ -14,7 +14,7 @@ function Projects() {
     <>
       <div className="projects" id="projects">
         <h2 className="section-header">CS Projects</h2>
-        <Row>
+        <Row className="mt-3">
           <Col>
             <Button variant="primary" onClick={() => setShowProject1Modal(true)}>Launch Project</Button>
           </Col>
@@ -25,8 +25,8 @@ function Projects() {
             <Button variant="primary" onClick={() => setShowProject3Modal(true)}>Launch Project</Button>
           </Col>
         </Row>
-        <h2 className="section-header">Game Development Projects</h2>
-        <Row>
+        <h2 className="section-header mt-5">Game Development Projects</h2>
+        <Row className="mt-3">
           <Col>
             <Button variant="primary" onClick={() => setShowProject4Modal(true)}>Launch Project</Button>
           </Col>

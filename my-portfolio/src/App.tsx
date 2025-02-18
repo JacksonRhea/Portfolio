@@ -30,9 +30,11 @@ function App() {
             </Nav>
           </Container>
         </Navbar>
-        <div className="d-flex align-items-center">
-          <Image className="me" src={`${me}`} roundedCircle />
-          <div className="ml-5">
+        <div className="d-flex align-items-center mb-5">
+          <div>
+            <Image className="me" src={`${me}`} roundedCircle />
+          </div>
+          <div className="bio">
             <h1 className="header text-start">Hi, I'm Jackson Rhea</h1>
             <p className="subheader text-start">
               Computer science graduate (Summa Cum Laude) with full-stack
@@ -101,18 +103,12 @@ function App() {
       </div>
 
       {/* // Footer */}
-      <Navbar bg="dark" data-bs-theme="dark">
-        <Container className="justify-content-space-between">
-          <Navbar.Brand href="#home">Jackson Rhea</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">About Me</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
-            <Nav.Link href="#experience">Experience</Nav.Link>
-            <Nav.Link href="#contact">Contact Me</Nav.Link>
-            <Nav.Link href="#resume">Resume</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
+      <div className="footer">
+        <a className="text-decoration-none" href="#home"><p className="footer-text">About Me</p></a>
+        <a className="text-decoration-none" href="#projects"><p className="footer-text">Projects</p></a>
+        <a className="text-decoration-none" href="#experience"><p className="footer-text">Experience</p></a>
+        <a className="text-decoration-none" href="#contact"><p className="footer-text">Contact Me</p></a>
+      </div>
     </>
   );
 }
