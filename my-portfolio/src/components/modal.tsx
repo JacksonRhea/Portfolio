@@ -1,5 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import { Image } from 'react-bootstrap';
 
 interface Props {
   title: string;
@@ -28,7 +29,8 @@ function GenericModal(props: Props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4>Centered Modal</h4>
+        <h6>Subheader</h6>
+        <Image src={props.imageLink} />
         <p>
           {props.description}
         </p>

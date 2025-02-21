@@ -12,7 +12,6 @@ import {
 import Projects from "./pages/projects";
 
 function App() {
-  const me = new URL("./assets/me.PNG", import.meta.url).href;
 
   return (
     <>
@@ -32,7 +31,7 @@ function App() {
         </Navbar>
         <div className="d-flex align-items-center mb-5">
           <div>
-            <Image className="me" src={`${me}`} roundedCircle />
+            <Image className="me" src="/me.PNG" roundedCircle />
           </div>
           <div className="bio">
             <h1 className="header text-start">Hi, I'm Jackson Rhea</h1>
@@ -49,7 +48,11 @@ function App() {
       </div>
 
       {/* // Projects */}
-      <Projects />
+      <div className="projects" id="projects">
+        <h2 className="section-header temp">Projects</h2>
+
+        <Projects />
+      </div>
 
       {/* // Experience */}
       <div className="experience" id="experience">

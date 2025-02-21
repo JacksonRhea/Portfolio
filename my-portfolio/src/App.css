@@ -2,6 +2,7 @@
   width: 100%;
   height: auto;
   padding-top: 60px;
+  padding-left: 15%;
   border-color: red;
   border-style: dashed;
   background-color: #242424;
@@ -22,13 +23,13 @@
 
 .projects {
   width: 100%;
-  padding-top: 60px;
-  height: 600px;
+  padding: 60px 20px;
+  height: auto;
   border-color: red;
   border-style: dashed;
   background-color: #242424;
   overflow-x: hidden;
-  padding-left: 8%;
+  align-items: start;
 }
 
 .section-header {
@@ -88,7 +89,6 @@
 }
 
 .me {
-  margin-left: 10%;
   margin-top: 20%;
   width: 300px;
   height: 300px;
@@ -113,4 +113,10 @@
   margin-left: 10%;
   margin-right: 3%;
   margin-top: 10%;
+}
+
+.temp {
+  border-radius: 2;
+  border-style: dotted;
+  border-color: green;
 }
