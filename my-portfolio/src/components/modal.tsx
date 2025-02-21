@@ -4,6 +4,7 @@ import { Image } from 'react-bootstrap';
 
 interface Props {
   title: string;
+  subheader: string;
   description: string;
   techstack: string[];
   githubLink: string;
@@ -29,7 +30,7 @@ function GenericModal(props: Props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h6>Subheader</h6>
+        <h6>{props.subheader}</h6>
         <Image src={props.imageLink} />
         <p>
           {props.description}

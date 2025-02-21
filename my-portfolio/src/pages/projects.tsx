@@ -44,6 +44,7 @@ function Projects() {
       <GenericModal
         show={showProjectModal}
         title={activeProject?.title || ""}
+        subheader={activeProject?.subheader || ""}
         description={activeProject?.description || ""}
         techstack={activeProject?.techstack || []}
         githubLink={activeProject?.githubLink || ""}
@@ -58,6 +59,7 @@ export default Projects;
 
 interface ProjectInfo {
   title: string;
+  subheader: string;
   description: string;
   techstack: string[];
   githubLink: string;
@@ -65,7 +67,8 @@ interface ProjectInfo {
 }
 
 const proj1: ProjectInfo = {
-  title: "Project 1",
+  title: "Elden Ring Boss Checklist App",
+  subheader: "Checklist for the bosses in Elden Ring",
   description: "This is a description of project 1",
   techstack: ["React", "Node.js", "Typescript"],
   githubLink: "https://github.com/project1",
@@ -73,7 +76,8 @@ const proj1: ProjectInfo = {
 };
 
 const proj2: ProjectInfo = {
-  title: "Project 2",
+  title: "ASU Computer Science Capstone",
+  subheader: "Digital Pantry",
   description: "This is a description of project 2",
   techstack: ["React", "Node.js", "Typescript"],
   githubLink: "https://github.com/project1",
@@ -81,7 +85,8 @@ const proj2: ProjectInfo = {
 };
 
 const proj3: ProjectInfo = {
-  title: "Project 3",
+  title: "IOS Workout Generator App",
+  subheader: "Generate Workouts based on user preferences",
   description: "This is a description of project 3",
   techstack: ["React", "Node.js", "Typescript"],
   githubLink: "https://github.com/project1",
@@ -89,7 +94,8 @@ const proj3: ProjectInfo = {
 };
 
 const proj4: ProjectInfo = {
-  title: "Project 4",
+  title: "ASU Game Development Capstone Project",
+  subheader: "Keystone Labyrinth",
   description: "This is a description of project 4",
   techstack: ["React", "Node.js", "Typescript"],
   githubLink: "https://github.com/project1",
@@ -97,7 +103,8 @@ const proj4: ProjectInfo = {
 };
 
 const proj5: ProjectInfo = {
-  title: "Project 5",
+  title: "3D Party Game",
+  subheader: "3D Party Game",
   description: "This is a description of project 5",
   techstack: ["React", "Node.js", "Typescript"],
   githubLink: "https://github.com/project1",
@@ -105,7 +112,8 @@ const proj5: ProjectInfo = {
 };
 
 const proj6: ProjectInfo = {
-  title: "Project 6",
+  title: "2D Platformer Game",
+  subheader: "Reclaimed Treasure",
   description: "This is a description of project 6",
   techstack: ["React", "Node.js", "Typescript"],
   githubLink: "https://github.com/project1",
