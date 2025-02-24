@@ -1,91 +1,56 @@
-.home {
-  width: 100%;
-  height: auto;
-  padding-top: 60px;
-  padding-left: 15%;
-  border-color: red;
-  border-style: dashed;
-  background-color: #242424;
-  overflow-x: hidden;
+/* ////// GLOBALS ////// */
+html, body {
+  font-family: 'Inter', 'sans-serif';
+  color: white;
+  text-align: center;
 }
 
-.header {
-  color: white;
+.subheader, .subheader-dark {
+  font-size: 16px;
+}
+
+.section-header, .section-header-dark,
+.header, .header-dark {
   font-size: 48px;
-  text-align: center;
-}
-
-.subheader {
-  color: white;
-  font-size: 16px;
-  text-align: center;
-}
-
-.projects {
-  width: 100%;
-  padding: 60px 20px;
-  height: auto;
-  border-color: red;
-  border-style: dashed;
-  background-color: #242424;
-  overflow-x: hidden;
-  align-items: start;
-}
-
-.section-header {
-  color: white;
-  font-size: 24px;
-  text-align: left;
-}
-
-.experience {
-  width: 100%;
-  height: 600px;
-  padding-top: 60px;
-  border-color: red;
-  border-style: dashed;
-  background-color: #242424;
-}
-
-.role-text {
-  color: white;
-  font-size: 20px;
-  text-align: left;
-}
-
-.job-text {
-  color: white;
-  font-size: 16px;
-  text-align: left;
-}
-
-.contact {
-  width: 100%;
-  height: 600px;
-  padding-top: 60px;
-  border-color: red;
-  border-style: dashed;
-  background-color: #242424;
-}
-
-.contact-inputs {
-  background-color: #323232;
-  border-radius: 20px;
-  border: none;
-}
-
-.contact-inputs::placeholder {
-  opacity: 0.5;
-  color: #c1c1c1
-}
-
-.contact-inputs:focus {
-  background-color: #323232;
+  font-weight: bold;
+  margin-top: 5%;
 }
 
 .button {
   background-color: #E10F05;
-  color: white;
+  align-content: center;
+  margin-top: 4%;
+  height: 60px;
+  width: 200px;
+  border-radius: 20px;
+  border: none;
+}
+
+.button:hover{
+  background-color: #c90d03;
+}
+
+.button:active {  
+  background: none !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #7a0802 !important;
+  text-shadow: none !important;
+}
+
+
+/* ////// ABOUT ME ////// */
+.home {
+  width: 100%;
+  align-content: center;
+  height: 100vh;
+  padding-top: 60px;
+  padding-left: 11%;
+  /* border-color: red;
+  border-style: dashed; */
+  background-color: #141619;
+  overflow-x: hidden;
 }
 
 .me {
@@ -93,26 +58,42 @@
   width: 300px;
   height: 300px;
   object-fit: fill;
-}
-
-.footer {
-  height: 80px;
-  background-color: #323232;
-  align-items: center;
-  justify-content: end;
-  display: flex;
-}
-
-.footer-text {
-  color: white;
-  margin-right: 2%;
-  width: 100px;
+  border: 8px solid rgb(84, 84, 84);
 }
 
 .bio {
-  margin-left: 10%;
+  margin-left: 8%;
   margin-right: 3%;
   margin-top: 10%;
+}
+
+.button-link {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  padding: 0;
+  border: none;
+  margin-top: 45px;
+}
+
+.link-container {
+  margin-left: 2.5%;
+  margin-top: 2%;
+}
+
+.link-img {
+  width: 60px;
+  height: 60px;
+}
+
+.img-left {
+  margin-left: -30px;
+}
+
+.link-img:hover,
+.footer-img:hover {
+  filter: saturate(2);
+  transform: scale(1.1);
 }
 
 .temp {
@@ -120,3 +101,192 @@
   border-style: dotted;
   border-color: green;
 }
+
+
+/* ////// PROJECTS ////// */
+.projects {
+  width: 100%;
+  height: auto;
+  padding-top: 60px;
+  /* border-color: red;
+  border-style: dashed; */
+  background-color: #141619;
+  overflow-x: hidden;
+  align-items: start;
+}
+
+.project-card {
+  width: 99%;
+  min-height: 450px;
+  border-radius: 18px;
+  background-color: #212529;
+  color: white;
+  margin-top: 8%;
+}
+
+.card-body {
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+.modal-img {
+  align-self: center;
+  width: 90%;
+  height: 300px;
+  margin-top: 3%;
+  border-radius: 18px;
+}
+
+.opened-modal-img {
+  width: 85%;
+  height: 300px;
+  border-radius: 18px;
+  margin-right: 5%;
+}
+
+.opened-modal-title {
+  font-weight: bold;
+}
+
+.opened-modal-subheader {
+  font-weight: bold;
+  margin-bottom: 2%;
+  text-align: left;
+}
+
+.opened-modal-desc {
+  margin-top: 3%;
+  margin-bottom: 5%;
+  white-space: pre-line;
+}
+
+.tech-container {
+  width: fit-content;
+  justify-self: center;
+}
+
+.tech {
+  text-align: left;
+}
+
+
+/* ////// EXPERIENCE ////// */
+.job-header {
+  font-size: 24px;
+  text-align: left;
+}
+
+.experience {
+  width: 100%;
+  height: 100vh;
+  padding-top: 60px;
+  /* border-color: red;
+  border-style: dashed; */
+  background-color: #141619;
+}
+
+.role-text {
+  font-size: 20px;
+  text-align: left;
+}
+
+.job-text {
+  font-size: 16px;
+  text-align: left;
+  padding-right: 6%;
+}
+
+.exp-img {
+  width: 80px;
+  height: 80px;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+
+/* ////// CONTACT ////// */
+.email-inputs {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 4%;
+}
+
+.contact {
+  width: 100%;
+  align-content: center;
+  height: 100vh;
+  padding-top: 60px;
+  /* border-color: red;
+  border-style: dashed; */
+  background-color: #141619;
+}
+
+.contact-inputs, .form-inputs {
+  background-color: #323232;
+  color: lightgray;
+  font-size: 16px;
+}
+
+.contact-inputs::placeholder,
+.form-inputs::placeholder {
+  opacity: 0.5;
+  color: #c1c1c1
+}
+
+.contact-inputs:focus,
+.form-inputs:focus {
+  background-color: #323232;
+  color: lightgray;
+}
+
+.small-inputs {
+  width: 47%;
+  height: 40px;
+}
+
+.contact-text {
+  justify-self: center;
+}
+
+.invalid {
+  text-align: left;
+}
+
+
+/* ////// FOOTER/NAVBAR //////  */
+.footer {
+  height: 80px;
+  background-color: #323232;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-text {
+  color: white;
+  width: 100px;
+  margin-top: 15%;
+  width: 100px;
+}
+
+.footer-link-container {
+  margin-left: 5%;
+  width: 150px;
+}
+
+.footer-link {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  padding: 0;
+  border: none;
+  margin-left: 8%;
+}
+
+.footer-img {
+  height: 30px;
+  width: 30px;
+  margin-left: 3%;
+}
+
+/* ////////// END OF CSS ////////// */
