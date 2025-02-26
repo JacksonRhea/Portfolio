@@ -103,7 +103,7 @@ const proj3: ProjectInfo = {
 };
 
 const proj4: ProjectInfo = {
-  title: "Multiplayer Dungeon Crawler (Game Dev)",
+  title: "Dungeon Crawler (Game Dev)",
   subheader: "Project Title: Keystone Labyrinth",
   briefDescription: "Dungeon Crawler made in Unreal Engine 5 with multiplayer",
   description: "For our game development capstone, we created a multiplayer dungeon crawler using Unreal Engine 5. I was responsible for implementing a procedural dungeon plugin, ensuring each dungeon spawned with a specific number of rooms, keys to escape, and enemy encounters. I also served as the level designer, a role I’m especially proud of as the final environments turned out exceptionally well in Unreal. On the last day of class, groups of four classmates played from our selection of four characters, explored our two dungeons, and faced the final boss, making for a successful showcase.",

@@ -1,28 +1,35 @@
 import "./App.css";
 import {
-  Col,
   Container,
   Nav,
   Navbar,
-  Row,
   Image,
   Button,
   Form,
+  NavDropdown,
 } from "react-bootstrap";
 import Projects from "./pages/projects";
 import { useState } from "react";
 import emailjs from '@emailjs/browser';
+import ToastModel from "./components/toast";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons/faFileArrowDown";
 
 function App() {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [isInvalid, setIsInvalid] = useState(false);
-  const [sentEmail, setSentEmail] = useState(false);
+  const [showToast, setShowToast] = useState(false);
+  const [toastMessage, setToastMessage] = useState("");
+  const [isSuccess, setIsSuccess] = useState(false);
 
   const handleSendEmail = () => {
     if (name === "" || email === "" || message === "") {
       setIsInvalid(true);
+      setToastMessage("Please fill out all fields before sending the email.");
+      setShowToast(true);
+      setIsSuccess(false);
       return;
     }
 
@@ -43,28 +50,40 @@ function App() {
         setName("");
         setEmail("");
         setMessage("");
+        setToastMessage(`Email sent successfully!`);
+        setShowToast(true);
+        setIsSuccess(true);
+        setIsInvalid(false);
       }, (error) => {
-        
+        setToastMessage(`Error sending email. ${error}`);
+        setShowToast(true);
+        setIsSuccess(false);
       });
   }
 
   return (
     <>
-      <a id="home" />
-      <div className="home">
+      <div id="home" className="home">
         <Navbar fixed="top" bg="dark" data-bs-theme="dark">
           <Container className="justify-content-space-between">
             <Navbar.Brand href="#home">Jackson Rhea</Navbar.Brand>
-            <Nav className="justify-content-end">
+            <Nav className="nav-link-container">
               <Nav.Link href="#home">About Me</Nav.Link>
               <Nav.Link href="#projects">Projects</Nav.Link>
               <Nav.Link href="#experience">Experience</Nav.Link>
               <Nav.Link href="#contact">Contact Me</Nav.Link>
-              <Nav.Link href="/Public_Resume.pdf" download="Jackson_Rhea_Resume">Resume</Nav.Link>
+              <Nav.Link href="/Public_Resume.pdf" download="Jackson_Rhea_Resume"><FontAwesomeIcon icon={faFileArrowDown} style={{color: "#d1d1d1", marginRight: '4'}} />Resume</Nav.Link>
             </Nav>
+
+            <NavDropdown className="nav-link-dropdown" title="Menu">
+              <NavDropdown.Item href="#home">About Me</NavDropdown.Item>
+              <NavDropdown.Item href="#projects">Projects</NavDropdown.Item>
+              <NavDropdown.Item href="#experience">Experience</NavDropdown.Item>
+              <NavDropdown.Item href="#contact">Contact Me</NavDropdown.Item>
+            </NavDropdown>
           </Container>
         </Navbar>
-        <div className="d-flex align-items-center mb-5">
+        <div className="info-container">
           <div>
             <Image className="me" src="/me.PNG" roundedCircle />
           </div>
@@ -80,15 +99,18 @@ function App() {
             </Button>
           </div>
           <div className="bio">
-            <h1 className="header text-start">Hi, I'm Jackson Rhea</h1>
-            <p className="subheader text-start">
-              Computer science graduate (Summa Cum Laude) with full-stack
-              development experience in React, Node.js, ASP.Net, and Typescript.
-              Skilled in building scalable, high-performance applications, and
-              optimizing APIs for efficiency. Passionate about problem-solving,
-              clean and efficient code, and delivering impactful software
-              solutions in fast-paced environments.
+            <h1 className="header text-start">Jackson Rhea</h1>
+            <h5 className="text-start">'24 ASU Computer Science Student</h5>
+            <p className="subheader text-start mt-5">
+              Hello and welcome to my portfolio! I am a class of 2024 graduate at the Ira A. Fulton School of Engineering
+              at Arizona State University. I've always had a passion for engineering, however, when I had to pick my major
+              I didn't know what I wanted to do. I decided to go with Computer Science because I've always been interested 
+              in computers and games. Looking back now I know I made the right choice as my time in college showed me just 
+              a glimpse of what you can do in this field and I am beyond excited to keep creating and learning.
             </p>
+            <h5 className="text-start mt-5">Arizona State University (ASU)</h5>
+            <li className="text-start">Bachelor of Science in Computer Science (Summa Cum Laude)</li>
+            <li className="text-start">Certificate of Game Development</li>
           </div>
         </div>
       </div>
@@ -103,7 +125,7 @@ function App() {
       {/* // Experience */}
       <div className="experience" id="experience">
         <h2 className="section-header">Experience</h2>
-        <div className="d-flex mt-5">
+        <div className="job-container">
           <Image className="exp-img" src="/sandhills.jpeg" roundedCircle />
           <div>
             <h2 className="job-header">Sandhills Global (GoCurrency)</h2>
@@ -116,7 +138,7 @@ function App() {
           </div>
         </div>
 
-        <div className="d-flex mt-5">
+        <div className="job-container">
           <Image className="exp-img" src="/scion.jpeg" roundedCircle />
           <div>
             <h2 className="job-header">The Scion Group</h2>
@@ -128,7 +150,7 @@ function App() {
         </div>
       </div>
 
-      <div className="contact">
+      <div className="contact" id="contact">
         <h2 className="section-header">Get in Touch</h2>
         <h6 className="contact-text">Email: Jacksonrhea24@gmail.com</h6>
         <p className="contact-text">Or fill out this form...</p>
@@ -178,7 +200,6 @@ function App() {
           <Button onClick={handleSendEmail} type="submit" className="button" variant="primary">
             Send Message
           </Button>
-          <Form.Control.Feedback className="valid" type="valid">Email sent!</Form.Control.Feedback>
           </div>
       </div>
 
@@ -195,13 +216,15 @@ function App() {
             <Image className="footer-img" src="/itch.jpg" roundedCircle />
           </Button>
         </div>
-        <div className="d-flex m-4">
+        <div className="footer-nav-links">
           <a className="text-decoration-none" href="#home"><p className="footer-text">About Me</p></a>
           <a className="text-decoration-none" href="#projects"><p className="footer-text">Projects</p></a>
           <a className="text-decoration-none" href="#experience"><p className="footer-text">Experience</p></a>
-          <a id="contact" className="text-decoration-none" href="#contact"><p className="footer-text">Contact Me</p></a>
+          <a className="text-decoration-none" href="#contact"><p className="footer-text">Contact Me</p></a>
         </div>
       </div>
+
+      <ToastModel message={toastMessage} show={showToast} onShow={setShowToast} isSuccess={isSuccess} />
     </>
   );
 }
