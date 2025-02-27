@@ -104,6 +104,7 @@ html, body {
   .info-container {
     flex-direction: column;
     display: block;
+    padding-left: 0;
   }
 
   .img-left {
