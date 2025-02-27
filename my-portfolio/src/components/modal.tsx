@@ -1,6 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import { Image } from 'react-bootstrap';
+import { Carousel, Image } from 'react-bootstrap';
 
 interface Props {
   title: string;
@@ -10,6 +10,7 @@ interface Props {
   mediaLink: string;
   modalImageLink: string;
   show: boolean;
+  carouselImages?: string[];
   onHide: () => void;
 }
 
@@ -32,7 +33,17 @@ function GenericModal(props: Props) {
       <Modal.Body>
         <h5 className='opened-modal-subheader'>{props.subheader}</h5>
         <div className='d-flex'>
-          <Image className='opened-modal-img' src={props.modalImageLink} />
+          {props.carouselImages ? (
+            <Carousel controls={false} indicators={false} pause={false} className='carousel'>
+              {props.carouselImages.map((img) => (
+                <Carousel.Item interval={3000}>
+                  <Image className='carousel-img' src={img} />
+                </Carousel.Item>
+              ))}
+            </Carousel>
+          ) : (
+            <Image className='opened-modal-img' src={props.modalImageLink} />
+          )}
           <div>
             <h5 className='opened-modal-subheader'>Technologies Used</h5>
             <div className='tech-container'>

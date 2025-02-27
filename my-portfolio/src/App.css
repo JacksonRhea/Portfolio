@@ -1,6 +1,6 @@
 /* ////// GLOBALS ////// */
 html, body {
-  font-family: 'Inter', 'sans-serif';
+  font-family: 'Roboto', sans-serif;
   color: white;
   text-align: center;
 }
@@ -61,7 +61,6 @@ html, body {
   height: auto;
   min-height: 100vh;
   padding-top: 60px;
-  padding-left: 11%;
   /* border-color: red;
   border-style: dashed; */
   background-color: #141619;
@@ -74,6 +73,7 @@ html, body {
   align-items: center;
   justify-self: center;
   margin-bottom: 5%;
+  padding-left: 11%;
 }
 
 .img-left {
@@ -146,7 +146,7 @@ html, body {
 }
 
 .bio {
-  margin-left: 8%;
+  margin-left: 5%;
   margin-right: 3%;
   margin-top: 5%;
 }
@@ -181,6 +181,32 @@ html, body {
   border-radius: 2;
   border-style: dotted;
   border-color: green;
+}
+
+.skills {
+  width: 100%;
+  height: auto;
+}
+
+.skills-container {
+  justify-content: center;
+  margin-top: 5%;
+  justify-self: center;
+  width: 65%;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.skill {
+  background-color: #494949;
+  margin: 8px;
+  color: white;
+  width: fit-content;
+  padding: 4px;
+  height: 40px;
+  padding-top: 10px;
+  justify-self: center;
+  border: 1px solid darkgray;
 }
 
 
@@ -248,6 +274,20 @@ html, body {
 
 .tech {
   text-align: left;
+}
+
+.carousel {
+  width: 85%;
+  height: 300px;
+  border-radius: 18px;
+  margin-right: 5%;
+}
+
+.carousel-img {
+  width: 80%;
+  max-width: 200px;
+  height: 300px;
+  border-radius: 18px;
 }
 
 

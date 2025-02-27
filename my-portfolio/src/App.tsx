@@ -113,12 +113,19 @@ function App() {
             <li className="text-start">Certificate of Game Development</li>
           </div>
         </div>
+        <div className="skills">
+          <h2 className="section-header">Some of my skills</h2>
+          <div className="skills-container">
+            {skills.skills.map((skill) => (
+              <div className="skill">{skill}</div>
+            ))}
+          </div>
+        </div>
       </div>
 
       {/* // Projects */}
       <div className="projects" id="projects">
         <h2 className="section-header">Projects</h2>
-
         <Projects />
       </div>
 
@@ -230,3 +237,15 @@ function App() {
 }
 
 export default App;
+
+
+interface Skills {
+  skills: string[];
+}
+
+const skills: Skills = {
+  skills: [
+    "C#", "TypeScript", "Python", "Swift", "HTML/CSS", "SQL",
+    "React.js", "Node.js", "ASP.Net", "PostgreSQL", "Git", "Docker", "Scrum"
+  ]
+};

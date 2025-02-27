@@ -50,6 +50,7 @@ function Projects() {
         techstack={activeProject?.techstack || []}
         mediaLink={activeProject?.mediaLink || ""}
         modalImageLink={activeProject?.modalImageLink || ""}
+        carouselImages={activeProject?.carouselImages}
         onHide={() => setShowProjectModal(false)}
       />
     </>
@@ -67,6 +68,7 @@ interface ProjectInfo {
   mediaLink: string;
   cardImageLink: string;
   modalImageLink: string;
+  carouselImages?: string[];
 }
 
 const proj1: ProjectInfo = {
@@ -76,8 +78,9 @@ const proj1: ProjectInfo = {
   description: "To enhance my experience playing Elden Ring, I created a custom app to track my progress. While existing mods and paid services offered similar functionality, I wanted to build my own solution. One significant challenge was the lack of APIs providing comprehensive boss data, so I manually compiled all the necessary information—a time-consuming but rewarding process. \n\n Using TypeScript and React Native, technologies I’m most familiar with, I developed a mobile app featuring data for all 207 bosses. The app allows users to track completed bosses, view remaining challenges, and filter by completion status or specific regions. I hosted the app through the Apple Developer Program, enabling friends to use it during their playthroughs. While I haven't decided whether to officially release it, this project was both a fun and valuable learning experience.",
   techstack: ["React Native", "Node.js", "Typescript", "Expo Go", "Apple Developer Program"],
   mediaLink: "https://github.com/JacksonRhea/EldenRingBossList",
-  cardImageLink: "/elden-ring.png",
-  modalImageLink: "/elden-ring.png"
+  cardImageLink: "/elden-logo.avif",
+  modalImageLink: "/elden-ring.png",
+  carouselImages: ["/er-start.jpeg", "/er-enemy.jpeg", "er-desc.jpeg", "er-dropdown.jpeg"]
 };
 
 const proj2: ProjectInfo = {
@@ -88,7 +91,8 @@ const proj2: ProjectInfo = {
   techstack: ["React Native", "RESTful services", "Typescript", "Docker", "PostgreSQL", "Expo Go"],
   mediaLink: "https://github.com/DigitalPantry",
   cardImageLink: "/digital-pantry.jpeg",
-  modalImageLink: "/digital-pantry.jpeg"
+  modalImageLink: "/digital-pantry.jpeg",
+  carouselImages: ["/dp-login.png", "/dp-pantry.png", "/dp-household.png"]
 };
 
 const proj3: ProjectInfo = {
@@ -98,8 +102,8 @@ const proj3: ProjectInfo = {
   description: "Created as a class project, this workout generator app was built using Swift and Firebase for data storage. Users could sign up, log in, and manage their profiles. The app's core functionality was generating workouts based on user inputs. By selecting parameters like difficulty, muscle group, and workout type, the app would make a call to a public RESTful API and display a curated list of exercises based on the user’s preferences.",
   techstack: ["Swift", "Firebase"],
   mediaLink: "https://github.com/JacksonRhea/Workout-Generator",
-  cardImageLink: "/workout-generator.png",
-  modalImageLink: "/workout-generator.png"
+  cardImageLink: "/workout-friends.jpeg",
+  modalImageLink: "/workout-friends.jpeg",
 };
 
 const proj4: ProjectInfo = {
