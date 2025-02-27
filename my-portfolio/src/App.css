@@ -349,9 +349,6 @@ html, body {
 
 /* ////// CONTACT ////// */
 .email-inputs {
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 4%;
   width: 60%;
   justify-self: center;
 }
@@ -366,6 +363,7 @@ html, body {
   border-style: dashed; */
   background-color: #141619;
   padding-bottom: 3%;
+  justify-self: center;
 }
 
 .contact-inputs, .form-inputs {
