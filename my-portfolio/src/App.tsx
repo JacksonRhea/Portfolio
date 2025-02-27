@@ -72,7 +72,7 @@ function App() {
               <Nav.Link href="#projects">Projects</Nav.Link>
               <Nav.Link href="#experience">Experience</Nav.Link>
               <Nav.Link href="#contact">Contact Me</Nav.Link>
-              <Nav.Link href="/Public_Resume.pdf" download="Jackson_Rhea_Resume"><FontAwesomeIcon icon={faFileArrowDown} style={{color: "#d1d1d1", marginRight: '4'}} />Resume</Nav.Link>
+              <Nav.Link href="/Jackson_Rhea_Resume.pdf" download="Jackson_Rhea_Resume"><FontAwesomeIcon icon={faFileArrowDown} style={{color: "#d1d1d1", marginRight: '4'}} />Resume</Nav.Link>
             </Nav>
 
             <NavDropdown className="nav-link-dropdown" title="Menu">
