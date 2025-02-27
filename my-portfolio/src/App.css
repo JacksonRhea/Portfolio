@@ -197,6 +197,12 @@ html, body {
   flex-wrap: wrap;
 }
 
+@media screen and (min-width: 1900px) {
+  .skills-container {
+    width: 30%;
+  }
+}
+
 .skill {
   background-color: #494949;
   margin: 8px;
