@@ -1,13 +1,16 @@
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import { Carousel, Image } from 'react-bootstrap';
 
 interface Props {
   title: string;
+  subheader: string;
   description: string;
   techstack: string[];
-  githubLink: string;
-  imageLink: string;
+  mediaLink: string;
+  modalImageLink: string;
   show: boolean;
+  carouselImages?: string[];
   onHide: () => void;
 }
 
@@ -18,23 +21,44 @@ function GenericModal(props: Props) {
       {...props}
       onHide={props.onHide}
       size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
       centered
+      data-bs-theme="dark"
       className='modal'
     >
       <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
+        <Modal.Title className='opened-modal-title' id="contained-modal-title-vcenter">
           {props.title}
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4>Centered Modal</h4>
-        <p>
+        <h5 className='opened-modal-subheader'>{props.subheader}</h5>
+        <div className='d-flex'>
+          {props.carouselImages ? (
+            <Carousel controls={false} indicators={false} pause={false} className='carousel'>
+              {props.carouselImages.map((img) => (
+                <Carousel.Item interval={3000}>
+                  <Image className='carousel-img' src={img} />
+                </Carousel.Item>
+              ))}
+            </Carousel>
+          ) : (
+            <Image className='opened-modal-img' src={props.modalImageLink} />
+          )}
+          <div>
+            <h5 className='opened-modal-subheader'>Technologies Used</h5>
+            <div className='tech-container'>
+              {props.techstack.map((tech) => (
+                <li className='tech'>{tech}</li>
+              ))}
+            </div>
+          </div>
+        </div>
+        <p className='opened-modal-desc'>
           {props.description}
         </p>
       </Modal.Body>
       <Modal.Footer>
-        <Button className='button' href={props.githubLink}>View on Github</Button>
+        <Button target='_blank' className='button' href={props.mediaLink}>More Info</Button>
       </Modal.Footer>
     </Modal>
   );
