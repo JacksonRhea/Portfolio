@@ -89,6 +89,16 @@ function App() {
               <NavDropdown.Item href="#projects">Projects</NavDropdown.Item>
               <NavDropdown.Item href="#experience">Experience</NavDropdown.Item>
               <NavDropdown.Item href="#contact">Contact Me</NavDropdown.Item>
+              <NavDropdown.Item
+                href="/Jackson_Rhea_Resume.pdf"
+                download="Jackson_Rhea_Resume"
+              >
+                <FontAwesomeIcon
+                  icon={faFileArrowDown}
+                  style={{ color: "#d1d1d1", marginRight: "4" }}
+                />
+                Resume
+              </NavDropdown.Item>
             </NavDropdown>
           </Container>
         </Navbar>
@@ -310,6 +320,15 @@ function App() {
           </a>
           <a className="text-decoration-none" href="#contact">
             <p className="footer-text">Contact Me</p>
+          </a>
+          <a className="text-decoration-none" href="#contact">
+            <p className="footer-text">
+              <FontAwesomeIcon
+                icon={faFileArrowDown}
+                style={{ color: "#d1d1d1", marginRight: "4" }}
+              />
+              Resume
+            </p>
           </a>
         </div>
       </div>
