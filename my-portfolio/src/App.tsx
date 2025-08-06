@@ -72,7 +72,16 @@ function App() {
               <Nav.Link href="#projects">Projects</Nav.Link>
               <Nav.Link href="#experience">Experience</Nav.Link>
               <Nav.Link href="#contact">Contact Me</Nav.Link>
-              <Nav.Link href="/Public_Resume.pdf" download="Jackson_Rhea_Resume"><FontAwesomeIcon icon={faFileArrowDown} style={{color: "#d1d1d1", marginRight: '4'}} />Resume</Nav.Link>
+              <Nav.Link
+                href="/Jackson_Rhea_Resume.pdf"
+                download="Jackson_Rhea_Resume"
+              >
+                <FontAwesomeIcon
+                  icon={faFileArrowDown}
+                  style={{ color: "#d1d1d1", marginRight: "4" }}
+                />
+                Resume
+              </Nav.Link>
             </Nav>
 
             <NavDropdown className="nav-link-dropdown" title="Menu">
@@ -80,6 +89,16 @@ function App() {
               <NavDropdown.Item href="#projects">Projects</NavDropdown.Item>
               <NavDropdown.Item href="#experience">Experience</NavDropdown.Item>
               <NavDropdown.Item href="#contact">Contact Me</NavDropdown.Item>
+              <NavDropdown.Item
+                href="/Jackson_Rhea_Resume.pdf"
+                download="Jackson_Rhea_Resume"
+              >
+                <FontAwesomeIcon
+                  icon={faFileArrowDown}
+                  style={{ color: "#d1d1d1", marginRight: "4" }}
+                />
+                Resume
+              </NavDropdown.Item>
             </NavDropdown>
           </Container>
         </Navbar>
@@ -88,13 +107,25 @@ function App() {
             <Image className="me" src="/me.PNG" roundedCircle />
           </div>
           <div className="link-container">
-            <Button target="_blank" href="https://github.com/JacksonRhea" className="button-link img-left">
+            <Button
+              target="_blank"
+              href="https://github.com/JacksonRhea"
+              className="button-link img-left"
+            >
               <Image className="link-img" src="/github.jpeg" roundedCircle />
             </Button>
-            <Button target="_blank" href="https://linkedin.com/in/jackson-rhea" className="button-link">
+            <Button
+              target="_blank"
+              href="https://linkedin.com/in/jackson-rhea"
+              className="button-link"
+            >
               <Image className="link-img" src="/linked.png" roundedCircle />
             </Button>
-            <Button target="_blank" href="https://jacki-boi.itch.io" className="button-link img-left">
+            <Button
+              target="_blank"
+              href="https://jacki-boi.itch.io"
+              className="button-link img-left"
+            >
               <Image className="link-img" src="/itch.jpg" roundedCircle />
             </Button>
           </div>
@@ -102,14 +133,20 @@ function App() {
             <h1 className="header text-start">Jackson Rhea</h1>
             <h5 className="text-start">'24 ASU Computer Science Student</h5>
             <p className="subheader text-start mt-5">
-              Hello and welcome to my portfolio! I am a class of 2024 graduate at the Ira A. Fulton School of Engineering
-              at Arizona State University. I've always had a passion for engineering, however, when I had to pick my major
-              I didn't know what I wanted to do. I decided to go with Computer Science because I've always been interested 
-              in computers and games. Looking back now I know I made the right choice as my time in college showed me just 
-              a glimpse of what you can do in this field and I am beyond excited to keep creating and learning.
+              Hello and welcome to my portfolio! I am a class of 2024 graduate
+              at the Ira A. Fulton School of Engineering at Arizona State
+              University. I've always had a passion for engineering, however,
+              when I had to pick my major I didn't know what I wanted to do. I
+              decided to go with Computer Science because I've always been
+              interested in computers and games. Looking back now I know I made
+              the right choice as my time in college showed me just a glimpse of
+              what you can do in this field and I am beyond excited to keep
+              creating and learning.
             </p>
             <h5 className="text-start mt-5">Arizona State University (ASU)</h5>
-            <li className="text-start">Bachelor of Science in Computer Science (Summa Cum Laude)</li>
+            <li className="text-start">
+              Bachelor of Science in Computer Science (Summa Cum Laude)
+            </li>
             <li className="text-start">Certificate of Game Development</li>
           </div>
         </div>
@@ -138,10 +175,35 @@ function App() {
             <h2 className="job-header">Sandhills Global (GoCurrency)</h2>
             <p className="job-text">June 2023 - Present</p>
             <h3 className="role-text">Software Developer</h3>
-            <li className="job-text">Currently architecting the creation of a GAP and Extended Warranty service which will allow thousands of applications to add on products to cover their financed equipment, expected to generate over six figures of business value</li>
-            <li className="job-text">Successfully integrated with the Department of Transportation’s FMCSA RESTful API to automate the generation of safety reports, reducing manual workload and improving sales efficiency</li>
-            <li className="job-text">Developed back-end RESTful APIs using ASP.Net, enhancing data retrieval speed and maintainability</li>
-            <li className="job-text">Followed Scrum methodology in order to achieve the timely delivery of software solutions</li>
+            <li className="job-text">
+              Architected a GAP and Warranty service supporting 300+ products,
+              enabling applicants to add coverage to equipment purchases, and
+              generating six figures of business value
+            </li>
+            <li className="job-text">
+              Integrated Equifax API to implement Anti-Money Laundering (AML)
+              and Know Your Customer (KYC) support as part of an ongoing project
+              aiming to reduce fraud by detecting high-risk applicants.
+            </li>
+            <li className="job-text">
+              Played a pivotal role in migrating 100K+ legacy applications to a
+              new platform version, contributing to improved performance and
+              system modernization.
+            </li>
+            <li className="job-text">
+              Developed a notes system enabling admins and managers to create,
+              edit, and store application-related notes for streamlined internal
+              communication.
+            </li>
+            <li className="job-text">
+              Built functionality leveraging the Department of Transportation’s
+              SAFER Report API, allowing users to quickly retrieve motor carrier
+              safety data.
+            </li>
+            <li className="job-text">
+              Followed Scrum methodology to achieve the timely delivery of
+              software solutions
+            </li>
           </div>
         </div>
 
@@ -151,8 +213,14 @@ function App() {
             <h2 className="job-header">The Scion Group</h2>
             <p className="job-text">February 2022 - October 2022</p>
             <h3 className="role-text">Leasing Agent</h3>
-            <li className="job-text">Collaborated with a team to get 100% (823) of our leases signed for the next year</li>
-            <li className="job-text">Led multiple tours to potential clients resulting in them signing that day</li>
+            <li className="job-text">
+              Collaborated with a team to get 100% (823) of our leases signed
+              for the next year
+            </li>
+            <li className="job-text">
+              Led multiple tours to potential clients resulting in them signing
+              that day
+            </li>
           </div>
         </div>
       </div>
@@ -188,8 +256,8 @@ function App() {
                 isInvalid={isInvalid && email === ""}
               />
               <Form.Control.Feedback className="invalid" type="invalid">
-                  Email must have a value
-                </Form.Control.Feedback>
+                Email must have a value
+              </Form.Control.Feedback>
             </div>
           </div>
           <Form.Control
@@ -202,36 +270,75 @@ function App() {
             isInvalid={isInvalid && message === ""}
           />
           <Form.Control.Feedback className="invalid" type="invalid">
-                Message must have a value.
+            Message must have a value.
           </Form.Control.Feedback>
-          <Button onClick={handleSendEmail} type="submit" className="button" variant="primary">
+          <Button
+            onClick={handleSendEmail}
+            type="submit"
+            className="button"
+            variant="primary"
+          >
             Send Message
           </Button>
-          </div>
+        </div>
       </div>
 
       {/* // Footer */}
       <div className="footer">
         <div className="footer-link-container">
-          <Button target="_blank" href="https://github.com/JacksonRhea" className="footer-link">
+          <Button
+            target="_blank"
+            href="https://github.com/JacksonRhea"
+            className="footer-link"
+          >
             <Image className="footer-img" src="/github.jpeg" roundedCircle />
           </Button>
-          <Button target="_blank" href="https://linkedin.com/in/jackson-rhea" className="footer-link">
+          <Button
+            target="_blank"
+            href="https://linkedin.com/in/jackson-rhea"
+            className="footer-link"
+          >
             <Image className="footer-img" src="/linked.png" roundedCircle />
           </Button>
-          <Button target="_blank" href="https://jacki-boi.itch.io" className="footer-link">
+          <Button
+            target="_blank"
+            href="https://jacki-boi.itch.io"
+            className="footer-link"
+          >
             <Image className="footer-img" src="/itch.jpg" roundedCircle />
           </Button>
         </div>
         <div className="footer-nav-links">
-          <a className="text-decoration-none" href="#home"><p className="footer-text">About Me</p></a>
-          <a className="text-decoration-none" href="#projects"><p className="footer-text">Projects</p></a>
-          <a className="text-decoration-none" href="#experience"><p className="footer-text">Experience</p></a>
-          <a className="text-decoration-none" href="#contact"><p className="footer-text">Contact Me</p></a>
+          <a className="text-decoration-none" href="#home">
+            <p className="footer-text">About Me</p>
+          </a>
+          <a className="text-decoration-none" href="#projects">
+            <p className="footer-text">Projects</p>
+          </a>
+          <a className="text-decoration-none" href="#experience">
+            <p className="footer-text">Experience</p>
+          </a>
+          <a className="text-decoration-none" href="#contact">
+            <p className="footer-text">Contact Me</p>
+          </a>
+          <a className="text-decoration-none" href="#contact">
+            <p className="footer-text">
+              <FontAwesomeIcon
+                icon={faFileArrowDown}
+                style={{ color: "#d1d1d1", marginRight: "4" }}
+              />
+              Resume
+            </p>
+          </a>
         </div>
       </div>
 
-      <ToastModel message={toastMessage} show={showToast} onShow={setShowToast} isSuccess={isSuccess} />
+      <ToastModel
+        message={toastMessage}
+        show={showToast}
+        onShow={setShowToast}
+        isSuccess={isSuccess}
+      />
     </>
   );
 }
