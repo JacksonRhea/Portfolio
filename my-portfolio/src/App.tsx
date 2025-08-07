@@ -141,7 +141,7 @@ function App() {
               interested in computers and games. Looking back now I know I made
               the right choice as my time in college showed me just a glimpse of
               what you can do in this field and I am beyond excited to keep
-              creating and learning.
+              creating and learning!
             </p>
             <h5 className="text-start mt-5">Arizona State University (ASU)</h5>
             <li className="text-start">
