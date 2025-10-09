@@ -1,35 +1,24 @@
 import "./App.css";
-import {
-  Container,
-  Nav,
-  Navbar,
-  Image,
-  Button,
-  Form,
-  NavDropdown,
-} from "react-bootstrap";
+import { Container, Nav, Navbar, Image, Button, Form, NavDropdown } from "react-bootstrap";
 import Projects from "./pages/projects";
 import { useState } from "react";
 import emailjs from '@emailjs/browser';
-import ToastModel from "./components/toast";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons/faFileArrowDown";
+import { toast } from "react-toastify";
+import SnakeGame from "./pages/snake";
 
 function App() {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [isInvalid, setIsInvalid] = useState(false);
-  const [showToast, setShowToast] = useState(false);
-  const [toastMessage, setToastMessage] = useState("");
-  const [isSuccess, setIsSuccess] = useState(false);
+  const [showSnakeGame, setShowSnakeGame] = useState(false);
 
   const handleSendEmail = () => {
     if (name === "" || email === "" || message === "") {
       setIsInvalid(true);
-      setToastMessage("Please fill out all fields before sending the email.");
-      setShowToast(true);
-      setIsSuccess(false);
+      toast.error("Please fill out all fields before sending the email.")
       return;
     }
 
@@ -50,14 +39,10 @@ function App() {
         setName("");
         setEmail("");
         setMessage("");
-        setToastMessage(`Email sent successfully!`);
-        setShowToast(true);
-        setIsSuccess(true);
+        toast.success("Email sent successfully!");
         setIsInvalid(false);
       }, (error) => {
-        setToastMessage(`Error sending email. ${error}`);
-        setShowToast(true);
-        setIsSuccess(false);
+        toast.error(`Error sending email. ${error.text}`);
       });
   }
 
@@ -283,6 +268,13 @@ function App() {
         </div>
       </div>
 
+      <div className="surprise">
+        <a className="decoration-underline" onClick={() => setShowSnakeGame(true)}><h6 className="contact-text">Staying awhile? Click me!</h6></a>
+        {showSnakeGame && 
+          <SnakeGame show={showSnakeGame} setShowSnakeGame={setShowSnakeGame} />
+        }
+      </div>
+
       {/* // Footer */}
       <div className="footer">
         <div className="footer-link-container">
@@ -332,13 +324,6 @@ function App() {
           </a>
         </div>
       </div>
-
-      <ToastModel
-        message={toastMessage}
-        show={showToast}
-        onShow={setShowToast}
-        isSuccess={isSuccess}
-      />
     </>
   );
 }

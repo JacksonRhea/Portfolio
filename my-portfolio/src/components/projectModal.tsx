@@ -14,7 +14,7 @@ interface Props {
   onHide: () => void;
 }
 
-function GenericModal(props: Props) {
+function ProjectModal(props: Props) {
 
   return (
     <Modal
@@ -64,4 +64,4 @@ function GenericModal(props: Props) {
   );
 }
 
-export default GenericModal;
+export default ProjectModal;

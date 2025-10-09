@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Button, Card, Col, Container, Row } from "react-bootstrap";
-import GenericModal from "../components/modal";
+import { Card, Col, Container, Row } from "react-bootstrap";
+import ProjectModal from "../components/projectModal";
 
 function Projects() {
   const [showProjectModal, setShowProjectModal] = useState(false);
@@ -42,7 +42,7 @@ function Projects() {
       </Container>
 
       {/* //Project Modal */}
-      <GenericModal
+      <ProjectModal
         show={showProjectModal}
         title={activeProject?.title || ""}
         subheader={activeProject?.subheader || ""}
